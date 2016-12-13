@@ -6,10 +6,21 @@ From Stratch
 
 - Add npm configuration file including latest bower and gulp versions.
 - Add bower configuration file including jquery latest versions.
-- .bowerrc will define where bower save packages.
+- .bowerrc will define where bower will save the packages.
 - add gulp dependencies into package json
 - Create gulpfile.js
 - Check Task Runner Explorer to see if the task are reconigzed
+
+When all these is ready, VS will install automatically the packages, always try to use Package Manager Console.
+
+*** Task Runner Explorer ********
+
+From here you can bind the gulp task to be executed when the project
+
+ - Build
+ - Before Build
+ - Clean
+ - Open
 
 
 ******Problems with node versions Visual Studio********
