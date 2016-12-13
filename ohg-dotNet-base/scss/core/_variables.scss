@@ -1,0 +1,32 @@
+﻿//
+// Global variables
+// --------------------------------------------------
+
+$prefix: 'base-ohg';
+// .#{$prefix}-p   = page
+// .#{$prefix}-m   = module
+// .#{$prefix}-h   = helper
+// .#{$prefix}-mix = mixin
+// .#{$prefix}-is  = state
+// .#{$prefix}-f   = function
+
+// $slick-font-family: "DINWebPro";
+$slick-font-path: "../fonts/";
+// $slick-loader-path: "../";
+
+$page-width: 100%;
+$page-height: 100%;
+
+$primary-background-color: #dcdcdc;
+$secondary-background-color: #FFFFFF;
+$tertiary-background-color: #b9b9b9;
+$primary-theme-color: #FFFFFF;
+$secondary-theme-color: #ee7521;
+$tertiary-theme-color: #363636;
+$quaternary-theme-color: #b1b1b1;
+
+
+
+$primary-font: 'Open Sans', sans-serif;
+
+$screen-xs-max: 0;

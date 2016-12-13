@@ -1,0 +1,143 @@
+﻿//
+// Global styles
+// --------------------------------------------------
+
+body{
+	background-color: $primary-background-color;
+	overflow: scroll;
+	background-repeat: no-repeat;
+	background-color: $primary-background-color;
+	background-size: 100% auto;
+
+	#main-container{
+		position: relative;
+		height: $page-height;
+		margin: 30px auto 0;
+
+		@include breakpoint(phone) {
+			margin: 0;
+		}
+	}
+
+	.header-logos{
+		float: none;
+		margin-top: 20px;
+
+		img{
+			width: 100%;
+		}
+	}
+}
+
+/** Decorative Line **/
+.decorative-line{
+	width: 100%;
+	height: 12px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ee7521+0,fdca00+40,fdca00+50,fdca00+60,ee7521+100 */
+	background: #ee7521; /* Old browsers */
+	background: -moz-linear-gradient(left, #ee7521 0%, #fdca00 40%, #fdca00 50%, #fdca00 60%, #ee7521 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #ee7521 0%,#fdca00 40%,#fdca00 50%,#fdca00 60%,#ee7521 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #ee7521 0%,#fdca00 40%,#fdca00 50%,#fdca00 60%,#ee7521 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee7521', endColorstr='#ee7521',GradientType=1 ); /* IE6-9 */
+}
+
+/** Button Styles **/
+.btn, .btn-default, button{
+	background-color: $secondary-theme-color;
+	border: 2px solid #cf5805;
+	color: $primary-theme-color;
+	text-transform: uppercase;
+	font-family: $primary-font;
+	font-weight: bold;
+	font-size: 28px;
+	height: 62px;
+	line-height: 46px;
+	width: 100%;
+	border-radius: 0;
+
+	&:hover, &:active, &:visited, &:link, &:focus{
+		background-color: $secondary-theme-color;
+		color: $primary-theme-color;
+	}
+}
+
+/** Button Styles Overwrittes**/
+.btn-default:active:hover, .btn-default:active:focus, .btn-default.focus:active, .btn-default.active:hover, .btn-default.active:focus, .btn-default.active.focus, .open > .btn-default.dropdown-toggle:hover, .open > .btn-default.dropdown-toggle:focus, .open > .btn-default.dropdown-toggle.focus{
+	background-color: $secondary-theme-color;
+	color: $primary-theme-color;
+}
+
+/** Copied from the Ninlaro.com website for the footer **/
+.copyright {
+    background-color: #fff;
+    padding: 30px 34px;
+    margin-top: 70px;
+    font-size: 12px;
+
+    .col-sm-3 {
+	    float: right;
+
+		img {
+		    float: right;
+		    padding: 20px 0;
+		    max-width: 144px;
+		}
+
+		&.big-logo{
+			img{
+				margin: 0 auto;
+				display: block;
+				float: none;
+				padding: 0px 0 20px 0;
+
+				/* Medium devices (desktops, 992px and up) */
+				@media (min-width: 768px) {
+					padding: 20px 0;
+				}
+			}
+		}
+	}
+
+	img{
+		width: auto;
+	}
+
+	p{
+		margin-bottom: 3px;
+		font-size: 12px;
+		line-height: 1.428571429;
+	}
+
+	.copyrightImg {
+	    margin-top: -4px;
+	}
+}
+
+@media only screen and (min-width: 769px) {
+	&.homepage{
+		background-image: url("../images/global/bg.jpg");
+	}
+	&.patient {
+		background-image: url("../images/global/patient/bg.png");
+	}
+
+	&.hcp {
+		background-image: url("../images/global/hcp/bg.png");
+	}
+
+	&.pharmacist {
+		background-image: url("../images/global/pharmacist/bg.png");
+	}
+}
+
+@media only screen and (max-width : 768px) {
+	body {
+		background: url("../images/global/bg-mobile.png") 0 0px repeat-x #dcdcdc;
+	}
+
+	body .header-logos {
+		background: #ffffff;
+		margin-top: 0;
+		padding: 20px;
+	}
+}

@@ -1,7 +1,3 @@
-# FE-dotnet-base
-.Net template with Gulp and Bower 
-
-
 From Stratch 
 
 - Add npm configuration file including latest bower and gulp versions.
