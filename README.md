@@ -4,6 +4,14 @@
 
 From Stratch 
 
+Install Node.js -->
+Then install globally gulp and Browser-sync
+
+npm install -g gulp
+npm install -g browser-sync
+
+
+
 - Add npm configuration file including latest bower and gulp versions.
 - Add bower configuration file including jquery latest versions.
 - .bowerrc will define where bower will save the packages.
